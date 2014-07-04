@@ -2,7 +2,7 @@
 layout: post
 title:  "My project"
 date:   2014-06-15 19:25:36
-categories: Project Summer of Code
+categories: blog
 ---
 
 My project is to create a software that serves to help and understand the process of migraines more clearly.

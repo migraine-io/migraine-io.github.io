@@ -2,7 +2,7 @@
 layout: post
 title:  "My Project Plan"
 date:   2014-06-26 19:25:36
-categories: Project Summer of Code
+categories: blog
 ---
 
 ### July
