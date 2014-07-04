@@ -1,10 +1,11 @@
 # Site settings
-title: Rocío Paez
+title: Summer of Code
 email: rocio.paez@me.com
-description: "Programmer:Project Migraine."
+description: <a href=http://teams.railsgirlssummerofcode.org/teams/17>Rails Summer of Code.</a>
 baseurl: ""
-url: "http://rociopaez.com"
+url: "http://migraine.io"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: blog/:year/:title.html      #pretty
+port: 4001
