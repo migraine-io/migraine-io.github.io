@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Day #4"
+date: 2014-07-04 19:25:36
+categories: blog
+---
+
+Wireframes `Input` and `Output`
+
+![yo](/images/wireframe1.jpeg)
+
+![yo](/images/wireframe2.jpeg)
+
+![yo](/images/wireframe3.jpeg)
+
+![yo](/images/wireframe4.jpeg)
+
+![yo](/images/wireframe5.jpeg)
+
+![yo](/images/wireframe6.jpeg)
