@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Day #3"
+date: 2014-07-03 17:25:36
+categories: blog
+---
+
+
+
+### How to configure my <abbr title="Domain Name System">DNS</abbr>
+
+You need to edit the zone files:
+
+![yo](/images/zonefile_dns.png)
+
+
+
+
+### How to redirect the naked domain:
+
+The <abbr title="Domain Name System">DNS</abbr> can be configured in your hosting provider.  
+First, you choose the domain you need to configure.
+
+Then you select 'Web Forwarding' and add the redirect.
+
+![yo](/images/webfw.png)
+
+In my case:
+Gandi
+
+![yo](/images/redirect_dns.png)
+
+
+That would be all!
