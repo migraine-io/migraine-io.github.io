@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Day #7"
+date: 2014-07-07 19:25:36
+categories: blog
+---
+
+Remember <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>...
+
+![yo](/images/html.png)
+
+![yo](/images/reset.png)
+
+![yo](/images/style.png)
