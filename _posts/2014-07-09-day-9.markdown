@@ -1,0 +1,28 @@
+---
+layout: post
+tittle: "Day #9"
+date: 2014-07-09 10:03:25
+categories: blog
+---
+
+## Atom packages  
+
+### Auto Close HTML package for Atom
+
+To install Autoclose you need to do the following path:
+
+1. Go to Atom Preferences
+2. Settings
+3. Packages
+4. Write HTML
+5. Select Autoclose HTML click install and you are done!
+
+![yo](/images/autoclose_html.png)
+
+### Atom HTML Preview
+
+To install Preview you need to do the same path like Autoclose.
+
+Press `CTRL-P` in editor to open Preview.
+
+![yo](/images/html_preview.png)
