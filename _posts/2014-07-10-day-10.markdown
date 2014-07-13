@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day #10"
+date: 2014-07-10 10:03:25
+---
+
+This week I created a new repository with the name: "mock-up"
+
+In this folder I'm working in my input and output mock-up.  
+I'm creating all the interfaces that my application will have, I'm working with HTML and CSS.
+For now I'm not worried about the styles, so when you see the repository of what I'm doing, do not think that the application will stay that way, I'll be slowly improving it.
+When I'm finished writing all the code I'll publish it.
