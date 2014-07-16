@@ -1,0 +1,27 @@
+---
+layout: post
+tittle: "Day #15"
+date: 2014-07-15 13:03:25
+categories: blog
+---
+
+Today I created a new repository with the structure of my web.
+
+<a href ="https://github.com/migraine-io/mock-up">www.github.com/migraine-io/mock-up</a>
+
+I learned to create a new repository from my terminal.  
+This is done as follows:
+
+First you need to go to the folder you want to turn into a repository, then, you need to write the following:
+
+{% highlight bash %}  
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:migraine-io/mock-up.git
+git push -u origin master
+{% endhighlight bash %}
+
+Simple right?
+
+:)
