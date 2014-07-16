@@ -2,6 +2,7 @@
 layout: post
 title: "Day #10"
 date: 2014-07-10 10:03:25
+categories: blog
 ---
 
 This week I created a new repository with the name: "mock-up"
