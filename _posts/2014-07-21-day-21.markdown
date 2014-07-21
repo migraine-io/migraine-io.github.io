@@ -1,0 +1,52 @@
+---
+layout: post
+tittle: "Day #21"
+date: 2014-07-21 16:03:25
+categories: blog
+---
+
+## The smallest Ruby Web App example
+
+Today I learn how  to use the first step of <a href="http://cuba.is">Cuba</a> (Ruby microframework for web development).
+
+To install cuba you need to do the following steps in your terminal:
+
+~~~
+$ gem install cuba
+~~~
+
+Now you have Cuba install in your terminal    :)
+
+I created a folder with the name:
+
+*migraine-app*
+
+In this folder you need to create a new file called: `README.md`  
+If you don't like to use the extension `.md`, you can use: `.markdown` and `.mdown`.
+
+Create another file called `app.rb` with the following code:
+
+{% highlight ruby %}
+require "cuba"
+
+Cuba.define do
+  on(root) do
+    res.write("Hello World!")
+  end
+end
+{% endhighlight ruby %}
+
+Finally to run the application create a file called `config.ru` with the following code:
+
+{% highlight ruby %}
+require "./app"
+
+run(Cuba)
+{% endhighlight ruby %}
+
+Then you need to run `rackup` which is a command to run `rack` applications, it will use the `config.ru` file.
+
+Now you go to http://localhost:9292 and that's it!
+
+
+![Hello Cuba](/images/hello-cuba.jpg)
