@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Motivations"
-date:   2014-06-15 19:25:36
+date:   2014-06-19 19:25:36
 categories: blog
 ---
 

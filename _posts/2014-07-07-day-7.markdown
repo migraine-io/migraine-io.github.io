@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Day #7"
-date: 2014-07-08 19:25:36
+title: "Day 7"
+date: 2014-07-07 19:25:36
 categories: blog
 ---
 

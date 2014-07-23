@@ -1,10 +1,9 @@
 ---
 layout: post
-tittle: "Day #8"
+title: "Day 8"
 date: 2014-07-08 19:25:36
 categories: blog
 ---
-
 Thinking about how to display the web page...  
 For now I should not worry about the styles, so I'll see this later.  
 
