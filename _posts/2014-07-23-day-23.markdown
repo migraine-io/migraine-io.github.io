@@ -1,0 +1,87 @@
+---
+layout: post
+tittle: "Day 23"
+date: 2014-07-23 17:13:00
+categories: blog
+---
+
+Today I learned more about <a href="http://cuba.is">Cuba</a>.
+
+I created a new repository with the name: <a href="https://github.com/migraine-io/migraine-app">migraine-app</a>
+
+
+I'm using the following gems for my application:
+
+* <a href="https://github.com/soveran/mote">mote</a>
+* <a href="https://github.com/frodsan/mote-render">mote-render</a>
+
+{% highlight Ruby %}
+
+require "cuba"
+require "mote"
+require "mote/render"
+
+Cuba.plugin(Mote::Render)
+
+Cuba.use Rack::Static,
+  urls: %w[/js /css /img],
+  root: File.expand_path("./public", __dir__)
+
+Cuba.define do
+  on(root) do
+    render("index", title: "Hola")
+  end
+
+  on("login") do
+    render("login", title: "Login")
+  end
+
+  on("user") do
+    render("user", title: "User")
+  end
+
+  on("inputs") do
+    render("inputs", title: "Inputs")
+  end
+
+  on("outputs") do
+    render("outputs", title: "Outputs")
+  end
+
+  on("dashboard") do
+    render("dashboard", title: "Dashboard")
+  end
+
+end
+
+{% endhighlight Ruby %}
+
+To run the application on the server, you need to install the following gem: `mote`
+Remember, you need to write in the terminal:
+
+{% highlight Bash %}
+$ gem install mote
+{% endhighlight Bash %}
+
+To run the application you need to execute the following on your terminal:
+
+{% highlight Bash %}
+$ rackup config.ru
+{% endhighlight Bash %}
+
+Now we will get an error, why?
+If you read what the terminal tells us, we need to install mote-render:
+
+![yo](/images/installmote.jpg)
+
+{% highlight Bash %}
+$ gem install mote-render
+{% endhighlight Bash %}
+
+Now, you can run the application without problems:
+
+{% highlight Bash %}
+$ rackup config.ru
+{% endhighlight Bash %}
+
+Go to [http://localhost:9292](http://localhost:9292) and that's it!
