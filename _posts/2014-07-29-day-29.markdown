@@ -1,0 +1,44 @@
+---
+layout: post
+tittle: "Day 29"
+date: 2014-07-29 22:38:00
+categories: blog
+---
+
+### How can I store the data and validate the sign up?
+
+I updated my repository: <a href="https://github.com/migraine-io/migraine-app">migraine-app</a>
+
+I learned about 2 news gems:
+
+* <a href="https://github.com/soveran/ohm">Ohm</a> for storing objects in a database. To use Ohm you need to install <a href="http://redis.io">Redis</a>.
+* <a href="https://github.com/soveran/scrivener">Scrivener</a> helps to validate parameters that you want to assign.
+
+You need to do the following:
+
+# 1. Install redis
+{% highlight Bash %}
+$ brew install redis
+{% endhighlight Bash %}
+
+# 2. Install the gems
+{% highlight Bash %}
+$ gem install cuba
+$ gem install mote
+$ gem install mote-render
+$ gem install ohm
+$ gem install scrivener
+{% endhighlight Bash %}
+
+# 3. Start the server
+{% highlight Bash %}
+$ rackup config.ru
+{% endhighlight Bash %}
+
+# 4. Done!
+
+Go to [http://localhost:9292](http://localhost:9292)
+
+Requires Ruby 2.1+
+
+So, I will need to do the same with the Intputs and Outputs.
