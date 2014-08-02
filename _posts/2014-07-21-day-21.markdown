@@ -1,6 +1,6 @@
 ---
 layout: post
-tittle: "Day 21"
+title: "Day 21"
 date: 2014-07-21 16:03:25
 categories: blog
 ---

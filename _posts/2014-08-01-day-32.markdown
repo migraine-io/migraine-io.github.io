@@ -1,0 +1,126 @@
+---
+layout: post
+title: "Day 31"
+date: 2014-08-01 23:59:59
+categories: blog
+---
+
+### Playing with <a href="https://github.com/soveran/ohm">Ohm</a>
+
+Today I restructured all the folders in my application
+<a href="https://github.com/migraine-io/migraine-app">migraine-app</a>.
+I understand more about how it works.
+
+I was playing with the terminal and I could understand how user information, inputs and outputs are stored in the server.  
+
+The application have of 5 sections:  
+
+- Inputs
+- Outputs
+- Types
+- Dashboard
+- Users  
+
+I created a class called `Type` (The class starts always with uppercase). This class have 2 attributtes:
+
+- category  
+- name
+
+And it will reference a `User`.
+
+{% highlight Ruby %}
+class Type < Ohm::Model
+  reference :user, :User
+
+  attribute :category
+  attribute :name
+end
+{% endhighlight Ruby %}
+
+I created a class called `User`. This class have 3 atributtes:
+
+- name  
+- email  
+- password  
+
+{% highlight Ruby %}
+class User < Ohm::Model
+  attribute :name
+  attribute :email
+  attribute :password
+
+  collection :types,   :Type
+end
+{% endhighlight Ruby %}
+
+##### Now we can play with Types and Users:
+
+When you use require to load a file you need yo user require_relative this is perfect for accessing to my test data:  
+
+{% highlight bash %}
+$ cd ~/code/migraine-app/  
+$ irb
+{% endhighlight bash %}
+
+{% highlight ruby %}
+require_relative "app"
+{% highlight ruby %}
+
+If everything is correct it should show true. If you get an error because the path is wrong or it's misspelled.
+
+I call create on type and pass a hash of attributes category and name.
+
+{% highlight ruby %}
+Type.create category: "Food", name: "Chocolate"
+{% endhighlight ruby %}
+
+The ID es correlative unless you assign a value.
+If you input: `Type.all.to_a`  
+you get a full list with the types that we have created.
+
+![yo](/images/type_relative.jpg)
+
+#### You can do the same with the users:  
+Here for example are trying something different:  
+If we give to the class user a metod:
+
+{% highlight ruby %}
+User.new  
+{% endhighlight ruby %}
+
+Now we write:
+
+{% highlight ruby %}  
+User.all.to_a.length
+{% endhighlight ruby %}  
+
+`length` used to count.
+
+We will give the number of total IDs that we have created:  
+In this case it is 28.  
+
+Now we are going to assign a value to a name, email and password.  
+
+Now we write:
+
+{% highlight ruby %}  
+User.all.to_a.length
+{% endhighlight ruby %}
+
+We will give back 28.
+Why not 29?  
+This happens because we are not saving.  
+
+If we put:  
+
+{% highlight ruby %}  
+user.save
+{% endhighlight ruby %}  
+
+{% highlight ruby %}  
+User.all.to_a.length
+{% endhighlight ruby %}  
+
+Now the answer is 29
+
+![yo](/images/user_relative.jpg)
