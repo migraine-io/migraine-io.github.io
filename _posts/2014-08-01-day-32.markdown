@@ -64,7 +64,7 @@ $ irb
 
 {% highlight ruby %}
 require_relative "app"
-{% highlight ruby %}
+{% endhighlight ruby %}
 
 If everything is correct it should show true. If you get an error because the path is wrong or it's misspelled.
 
