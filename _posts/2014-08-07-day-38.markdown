@@ -1,0 +1,112 @@
+---
+layout: post
+title: "Day 38"
+date: 2014-08-07 23:56:55
+categories: blog
+---
+
+## Authentication
+
+Authentication is the verification of your identity. That way we can know what user is using the app.
+To perform authentication in my application, I'm using a gem called [shield][1].
+
+[1]: https://github.com/cyx/shield
+
+For use `shield`, you need to install the gem:
+
+{% highlight bash %}
+$ gem install shield
+{% endhighlight bash %}
+
+We will perform the authentication with the sign up.
+
+To use shield should be placed `include Shield::Model` in your User class.
+
+{% highlight ruby %}
+class User < Ohm::Model
+  include Shield::Model
+
+  attribute :name
+  attribute :email
+  attribute :crypted_password
+
+  collection :inputs,  :Input
+  collection :types,   :Type
+  collection :outputs, :Output
+
+  unique :email
+
+  def self.fetch(email)
+    with(:email, email)
+  end
+end
+{% endhighlight ruby %}
+
+Cuba allows you to separate routes in multiple files.
+Instead of defining everything in `app.rb`, we create a folder called `routes` and
+in this folder we place different routes files, one for users and one for guests.
+
+{% highlight ruby %}
+class Guests < Cuba
+  define do
+    on("login") do
+      on post, param("user") do |params|
+        user = User.authenticate(params["email"],  params["password"])
+
+        on user do
+          authenticate(user)
+
+          res.redirect("/dashboard")
+        end
+
+        on default do
+          render("login", title: "Login")
+        end
+      end
+
+      on default do
+        render("login", title: "Login")
+      end
+    end
+
+    on("signup") do
+      on post, param("user") do |params|
+        sign_up = SignUp.new(params)
+
+        on sign_up.valid? do
+          user = User.create(sign_up.slice(:name, :email, :password))
+
+          authenticate(user)
+
+          res.redirect("/dashboard")
+        end
+
+        on default do
+          render("signup", title: "Sign Up")
+        end
+      end
+
+      on default do
+        render("signup", title: "Sign Up")
+      end
+
+    end
+
+  end
+end
+end{% endhighlight ruby %}
+
+In this example what I'm doing is defining that for the login to happen there must be a `user` parameter.  
+We need to authenticate the parameters email and password.  
+If the user authenticates she should be redirected to the dashboard page.  
+But if not authenticated (or not being registered) she must be taken to the login page again.
+
+For the sign up is the same, I need a `user` parameter.  
+If sign up is valid (validated with [Scrivener][2]) a user will be created ([Ohm][3]) and redirect to the dashboard page.  
+But if the sign up is invalid (for example an incorrect email) you must be taken sign up page again.
+
+[2]: https://github.com/soveran/scrivener
+[3]: https://github.com/soveran/ohm
+
+To see the changes, you can access to my repository:
+<a href="https://github.com/migraine-io/migraine-app/compare/3d8c426fb194...b997142ae5eb">Migraine App</a>
