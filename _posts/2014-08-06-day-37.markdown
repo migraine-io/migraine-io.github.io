@@ -5,8 +5,6 @@ date: 2014-08-06 20:11:00
 categories: blog
 ---
 
-#### Starting a webserver with Shotgun
-
 To run the server from the terminal without having to write `rackup` all the time, you just need to open a file in your text editor with the name `makefile`
 With the following content:
 
