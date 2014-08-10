@@ -5,8 +5,17 @@ date: 2014-08-06 20:11:00
 categories: blog
 ---
 
-To run the server from the terminal without having to write `rackup` all the time, you just need to open a file in your text editor with the name `makefile`
-With the following content:
+To run the server from the terminal without having to write `rackup` all the time, you can use [shotgun][1], a gem that reloads the application with every request.
+
+[1]: https://github.com/rtomayko/shotgun
+
+You can install it with the gem command:
+
+{% highlight bash %}
+$ gem install shotgun
+{% endhighlight bash %}
+
+To easy its usage, you just need to create a file with the name `makefile` with the following content:
 
 {% highlight ruby %}
 server:
@@ -15,13 +24,7 @@ server:
 
 It is important to use a `<tab>` to indent the commands and not spaces.
 
-You need to download the gem <a href="https://github.com/rtomayko/shotgun">shotgun</a>.
-
-{% highlight bash %}
-$ gem install shotgun
-{% endhighlight bash %}
-
-Then you can run
+Then you can run:
 
 {% highlight bash %}
 $ make server
@@ -37,6 +40,6 @@ shotgun -o 0.0.0.0
 [2014-08-09 20:40:18] INFO  WEBrick::HTTPServer#start: pid=23274 port=9393
 {% endhighlight bash %}
 
-Now you no longer have to manually restart your server all the time.
+Now your application lives in http://localhost:9393 and you no longer have to manually restart your server all the time.
 
 :)
