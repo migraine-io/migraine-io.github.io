@@ -109,4 +109,4 @@ But if the sign up is invalid (for example an incorrect email) you must be taken
 [3]: https://github.com/soveran/ohm
 
 To see the changes, you can access to my repository:
-<a href="https://github.com/migraine-io/migraine-app/compare/3d8c426fb194...b997142ae5eb">Migraine App</a>
+<a href="https://github.com/migraine-io/migraine-app">Migraine App</a>
