@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Day 9"
+title: "Day 9 – Atom Packages"
 date: 2014-07-09 10:03:25
 categories: blog
----
-
-## Atom packages  
+---  
 
 ### Auto Close HTML package for Atom
 

@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Day 38"
+title: "Day 38 – Authentication with Shield"
 date: 2014-08-07 23:56:55
 categories: blog
 ---
-
-## Authentication with Shield
 
 Authentication is the verification of your identity. That way we can know what user is using the app.
 To perform authentication in my application, I'm using a gem called [shield][1].

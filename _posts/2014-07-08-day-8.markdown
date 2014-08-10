@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Day 8"
+title: "Day 8 – Thinking about How to Display the Web Page"
 date: 2014-07-08 19:25:36
 categories: blog
 ---
-Thinking about how to display the web page...  
+
 For now I should not worry about the styles, so I'll see this later.  
 
 I decided to do my project with <a href ="https://atom.io">Atom</a>, before I was working with <a href ="http://www.sublimetext.com">Sublime Text</a>, but it has convinced me.

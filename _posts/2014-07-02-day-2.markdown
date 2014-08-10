@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Day 2"
+title: "Day 2 – Objects vs. Classes"
 date: 2014-07-02 17:25:36
 categories: blog
 ---
-
 
 Today I learned to distinguish objects and classes:
 

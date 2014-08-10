@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 15"
+title: "Day 15 – Structure of my Web"
 date: 2014-07-15 13:03:25
 categories: blog
 ---

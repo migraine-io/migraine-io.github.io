@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 23"
+title: "Day 23 – How Does Cuba Work"
 date: 2014-07-23 17:13:00
 categories: blog
 ---

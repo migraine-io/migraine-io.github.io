@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Day 29"
+title: "Day 29 – How can I store the data and validate the sign up?"
 date: 2014-07-29 22:38:00
 categories: blog
 ---
-
-### How can I store the data and validate the sign up?
 
 I updated my repository: <a href="https://github.com/migraine-io/migraine-app">migraine-app</a>
 

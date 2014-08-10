@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Day 21"
+title: "Day 21 – The Smallest Ruby Web App Example"
 date: 2014-07-21 16:03:25
 categories: blog
 ---
-
-## The smallest Ruby Web App example
 
 Today I learn how  to use the first step of <a href="http://cuba.is">Cuba</a> (Ruby microframework for web development).
 

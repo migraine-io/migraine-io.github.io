@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 37"
+title: "Day 37 – Starting a webserver with Shotgun"
 date: 2014-08-06 20:11:00
 categories: blog
 ---

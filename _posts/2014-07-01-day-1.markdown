@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Day 1"
+title: "Day 1 – My First Day"
 date: 2014-07-01 19:25:36
 categories: blog
 ---
-My first day in Rails Girls Summer of Code.
+
+<a href="http://railsgirlssummerofcode.org">Rails Girls Summer of Code</a>
 
 ![yo](/images/day1.png)
 
