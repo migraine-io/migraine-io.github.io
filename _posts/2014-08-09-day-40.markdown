@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Day 40 – My First Pull Request"
+date: 2014-08-09 23:59:59
+categories: blog
+---
+
+Today I made my first contribution to open source!
+
+<https://github.com/cyx/shield/pull/19>
+
+![gift](/images/adios_bitches.gif)
+
+:)
