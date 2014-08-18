@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Day 46 – CSS Again"
+date: 2014-08-15 23:53:59
+categories: blog
+---
+
+I was working on my styles, and the application will now look like this:
+
+<https://github.com/migraine-io/migraine-app>
+
+![Sign Up page](/images/sign_up.jpg)
+
+![Sign In page](/images/sign_in.jpg)
+
+![Input page](/images/input.jpg)
+
+![Output page](/images/output.jpg)
+
+![Profile page](/images/profile.jpg)
+
+![Dashboard page](/images/dashboard.jpg)
+
+![Landing Page](/images/migraine.jpg)
