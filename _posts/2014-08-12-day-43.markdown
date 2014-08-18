@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Day 43 – Simplifying HTML with Ruby"
+date: 2014-08-12 23:59:59
+categories: blog
+---
+
+I had to make a selector for the date.
+I needed a selector for the month, day and year.
+
+Instead of writing 30 times:
+
+{% highlight ruby %}
+<label for="date">Date</label>
+  <select>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+  </select>
+</label>  
+{% endhighlight ruby %}
+
+I can’t write the code in this template because I’didn’t find the form to write Ruby in a templete with markdown without executing the code. I guess for my next post and I’ll have the way to go, as it is not critical to my application.
+
+#### You can do the following for the month:
+
+To write in Ruby with [mote](https://github.com/soveran/mote) you always need to write `%`.  
+Now you write:
+
+<script src="https://gist.github.com/rociopaez/707c1a9d7e2ab66a4e35.js"></script>
+
+
+Here we are giving a method `each`.  
+I'm saying:  
+You should start at number 1 to 12.  
+The default date must be today place: `Time.now.month`.  
+
+#### The same applies for days:
+
+<script src="https://gist.github.com/rociopaez/676bed92dc1d1756433a.js"></script>
+
+You should start at number 1 and finish in 12.
+The default date must be today place: `Time.now.day`   (I'm change month for day)
+
+#### And the year:
+
+<script src="https://gist.github.com/rociopaez/7f59432ab57565d69907.js"></script>
+
+Here what we are saying is:  
+The default date must be today place: `Time.now.year`.  
+After we are asking me to put in less than two years selector year in which we are.
+
+With this code I can now create forms without having to manually type all options.
