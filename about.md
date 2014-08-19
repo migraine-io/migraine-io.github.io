@@ -13,3 +13,5 @@ So I applied to the Summer of Code project with a project about Migraine (I will
 
 I will be working on this project as a volunteer for 3 months, from July 1 until the end of September.
 I will record my daily progress on my blog.
+
+![Rocio Paez](/images/yo.jpg)
