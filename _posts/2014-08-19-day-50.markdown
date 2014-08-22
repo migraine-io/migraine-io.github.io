@@ -20,6 +20,12 @@ seed:
 
 It is important to use a `<tab>` to indent the commands and not spaces.
 
+Then you can run:
+
+{% highlight bash %}
+$ make seed
+{% endhighlight bash %}
+
 If we go to the code:
 
 <script src="https://gist.github.com/rociopaez/7132603499481e77382a.js"></script>
@@ -36,7 +42,7 @@ the data. In my case it deletes all the users and types.
 
 **Line 5**  
 I am assigning a variable `user` and I am saying the following:
-Create an instance of the User class with the following parameters (name, email and password).
+Create an instance of the `User` class with the following parameters (name, email and password).
 Those parameters will be the `user` attributes.
 
 **Line 7**  
