@@ -9,7 +9,7 @@ When you want to test the application you are building, there is a great techniq
 With this technique you can do the tests you want without having to put the information on your application
 by hand.
 
-To use it you must do the following:
+### To use it you must do the following:
 
 You need to create a file with the name `makefile` with the following content:
 
@@ -26,11 +26,11 @@ Then you can run:
 $ make seed
 {% endhighlight bash %}
 
-If we go to the code:
+### If we go to the code:
 
 <script src="https://gist.github.com/rociopaez/7132603499481e77382a.js"></script>
 
-## What I'm doing here?
+### What I'm doing here?
 
 **Line 1**  
 Why do you write `require_relative` and no only `require`?  
