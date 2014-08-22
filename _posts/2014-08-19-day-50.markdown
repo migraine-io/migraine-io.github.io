@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 50 – Seeding your database"
+title: "Day 50 – Seeding your Database"
 date: 2014-08-19 23:53:59
 categories: blog
 ---
