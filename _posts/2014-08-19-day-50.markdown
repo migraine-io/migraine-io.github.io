@@ -47,6 +47,6 @@ Those parameters will be the `user` attributes.
 
 **Line 7**  
 I'm doing the same thing for the rest.
-Create an instance of the Type class with the following parameters (category and name).
+Create an instance of the `Type` class with the following parameters (category and name).
 
 That's how I create a user and a types for my testing.
