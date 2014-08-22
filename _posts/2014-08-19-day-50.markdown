@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Day 50 – Seeding your database"
+date: 2014-08-19 23:53:59
+categories: blog
+---
+
+When you want to test the application you are building, there is a great technique that solves these cases.
+With this technique you can do the tests you want without having to put the information on your application
+by hand.
+
+To use it you must do the following:
+
+You need to create a file with the name `makefile` with the following content:
+
+{% highlight ruby %}
+seed:
+	ruby seeds.rb
+{% endhighlight ruby %}
+
+It is important to use a `<tab>` to indent the commands and not spaces.
+
+If we go to the code:
+
+<script src="https://gist.github.com/rociopaez/7132603499481e77382a.js"></script>
+
+## What I'm doing here?
+
+**Line 1**  
+Why do you write `require_relative` and no only `require`?  
+You are saying that you aren't requiring a gem, but a file that is in the same folder.
+
+**Line 3**  
+Here I'm using a Redis command [FLUSHDB](http://redis.io/commands/flushdb). This command deletes all
+the data. In my case it deletes all the users and types.
+
+**Line 5**  
+I am assigning a variable `user` and I am saying the following:
+Create an instance of the User class with the following parameters (name, email and password).
+Those parameters will be the `user` attributes.
+
+**Line 7**  
+I'm doing the same thing for the rest.
+Create an instance of the Type class with the following parameters (category and name).
+
+That's how I create a user and a types for my testing.
