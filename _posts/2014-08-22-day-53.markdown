@@ -1,0 +1,61 @@
+---
+layout: post
+title: "Day 53 – Development Utilities"
+date: 2014-08-22 23:59:51
+categories: blog
+---
+
+To see the changes of my repository go to: <a href="https://github.com/migraine-io/migraine-app">migraine-app</a>
+
+To make the test of sending mails in the terminal, you can use a Gem called: [`mt`][1]
+
+[1]: https://github.com/soveran/mt
+
+You need to install:
+
+{% highlight bash %}
+$ gem install mt
+{% endhighlight bash %}
+
+If you are using [dep][1]:
+
+[1]: https://github.com/cyx/dep
+
+{% highlight bash %}
+$ dep add mt
+$ dep install
+{% endhighlight bash %}
+
+Then you can run:
+
+{% highlight bash %}
+$ mt 2525
+{% endhighlight bash %}
+
+Now we will test if the application works:  
+- Send confirmation emails: `malone`  
+- Delete the info and put default typos in each user: `seed`  
+
+### Send email with sign up:  
+
+![signup_email](/images/signup_email.jpg)
+
+![mt_signup_email](/images/mt_signup_email.jpg)
+
+### Send email with forgot your password:  
+
+![forgot_password_email](/images/forgot_password_email.jpg)
+
+![mt_forgot_password_email](/images/mt_forgot_password_email.jpg)
+
+### Inputs default for user:  
+
+![inputs_email](/images/inputs_default.jpg)
+
+### Identify user by name in profile:  
+
+![inputs_email](/images/profile_id.jpg)
+
+#### Now, the next step is:
+- Edit and delete inputs.  
+- Configure the email: admin@migraine.io and info@migraine.io
