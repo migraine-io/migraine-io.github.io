@@ -9,26 +9,21 @@ To send emails confirmations in the application, we are using a gem called [malo
 
 [1]: https://github.com/cyx/malone
 
-
 ### Sending a welcome email:
 
 #### You can write in the file `app.rb`:
 
-{% highlight ruby %}
-require "malone"
-Malone.connect(url: "smtp://localhost:2525", tls: false, domain: "migraine.io")
-Dir["./services/**/*.rb"].each { |f| require(f) }
-{% endhighlight ruby %}
+<script src="https://gist.github.com/rociopaez/b94d87ed8536fc3df659.js"></script>
 
-<https://github.com/migraine-io/migraine-app/commit/d98461c94a94f5a9452718dad2bb366cf8bcad47>
+[view changes][2]
 
-#### Create a folder with the name `services`:
+[2]: https://github.com/migraine-io/migraine-app/commit/d98461c94a94f5a9452718dad2bb366cf8bcad47
 
-In this folder we create a file with the extension `.rb` :`mailes.rb`.
+#### Create a folder with the name `services`:  
+In this folder we create a file with the extension `.rb`.
 
-Here we define a class `Mailer` and we asign methods.
+Here we define a class `Mailer` and we assign methods.
 When you use `extend` you add methods to the class and when you using `include` you add the methods to the instance.
-
 
 <script src="https://gist.github.com/rociopaez/1870f8848809e7f4764d.js"></script>
 
@@ -44,7 +39,7 @@ This files are only text, you have to write the content of the mail that the use
 
 <script src="https://gist.github.com/rociopaez/598e580b0b0b5e7460eb.js"></script>
 
-## How can I identify the name of the user?
+### How can I identify the name of the user?
 
 We create a file with the name: `helpers.rb`
 
@@ -60,9 +55,7 @@ Instead of using `authenticated(User)`, you can use `current_user`.
 
 Now when we render, we can do this:
 
-{% highlight ruby %}
-render("/profile", title: "Profile", current_user: current_user)
-{% endhighlight ruby %}
+`render("/profile", title: "Profile", current_user: current_user)`
 
 To find the `user`'s `name` in the profile.
 
