@@ -5,7 +5,7 @@ date: 2014-08-21 23:58:53
 categories: blog
 ---
 
-To send emails confirmations in the application, we are using a gem called [malone][1].
+To send emails confirmations in the application, we are using a gem called [`malone`][1].
 
 [1]: https://github.com/cyx/malone
 
