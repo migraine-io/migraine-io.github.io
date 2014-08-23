@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 52 – Sending Email Confirmation"
+title: "Day 52 – Sending Email Confirmations"
 date: 2014-08-21 23:58:53
 categories: blog
 ---
