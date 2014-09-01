@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Day 58 – Update my Profile"
+date: 2014-08-27 23:59:51
+categories: blog
+---
+
+To edit, I need to use [scrivener][1] again, we need to validate that the new user log data are correct.  
+Scrivener helps to validate parameters that you want to assign.
+Is the same like in the Sign Up and Sign In.
+
+[1]: https://github.com/soveran/scrivener
+
+I create a file with the name: `update_profile.rb`
+
+Here we are validate 3 attributes:  
+- name  
+- email  
+- current_email  
+
+<script src="https://gist.github.com/rociopaez/d900c0d6ff32c2755df0.js"></script>
+
+I wrote in the form: `edit_profile` and I verify the name and the email.
+This is the same validation like the form Sign Up and Sign In.
+Line 3 to 18.  
+
+<script src="https://gist.github.com/rociopaez/0a7c2057ec4d96e11d74.js"></script>
+
+Define the route.  
+I define `update_profile` in the line 5.
+
+<script src="https://gist.github.com/rociopaez/fb42a0d585339578989e.js"></script>
+
+Now in the app you can edit the profile :)
+
+![update_profile_1](/images/update_profile_1.jpg)
+
+
+![update_profile_2](/images/update_profile_2.jpg)
+
+
+![update_profile_3](/images/update_profile_3.jpg)
+
+To edit the password I create a new class with the validation.
+Will be able to see in the next block.
