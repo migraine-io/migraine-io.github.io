@@ -1,0 +1,75 @@
+---
+layout: post
+title: "Day 63 – Default Types with YAML"
+date: 2014-09-01 23:59:51
+categories: blog
+---
+
+Y = YAML  
+A = Ain't  
+M = Markup  
+L = Language
+
+[YAML][1] is a data serialisation standard for all programming languages.
+
+[1]: https://github.com/yaml/yaml-org-site
+
+You can see the commits: [migraine-app/commit][2]
+
+[2]: https://github.com/migraine-io/migraine-app/commit/f34688638e3a874633a174e479f2ebea823561c0
+
+### How can it work?
+
+You need to require `"yaml"`  
+
+I need this data to define my default types that I will have in my app, so I need to define this:
+
+{% highlight ruby %}
+DEFAULT_TYPES = YAML.load_file("./config/default_types.yml")
+{% endhighlight ruby %}
+
+I create a file with the extension `.yml`  
+Then I write all the categories and names that I want to appearing on the user
+
+{% highlight ruby %}
+- category: "Food"
+  name: "Chesse"
+- category: "Food"
+  name: "Chocolate"
+- category: "Food"
+  name: "Skip dinner"
+- category: "Drink"
+  name: "Cofee"
+- category: "Drink"
+  name: "Soda"
+- category: "Drink"
+  name: "Acoholic beverages"
+- category: "Symptoms"
+  name: "Nausea or vomiting"
+- category: "Symptoms"
+  name: "Sensitive to light, noise, smell"
+- category: "Body Changes"
+  name: "Mentruation or Skip menstruation"
+- category: "Body Changes"
+  name: "Stress"
+- category: "Medication"
+  name: "Ergotamin"
+- category: "Medication"
+  name: "Exedrin"
+- category: "Medication"
+  name: "Aspirin"
+{% endhighlight ruby %}
+
+{% highlight ruby %}
+DEFAULT_TYPES.each do |type_attributes|
+  Type.create(category: type_attributes["category"],
+                  name: type_attributes["name"],
+               user_id: user.id)
+end
+{% endhighlight ruby %}
+
+Now I erase all the list of names and categories because I need to write in the app the list by default  `(.ymL file)`
+
+<script src="https://gist.github.com/rociopaez/e1d742a908ac9764d408.js"></script>
+
+Once we place this code, all the users has default types in the profile.
