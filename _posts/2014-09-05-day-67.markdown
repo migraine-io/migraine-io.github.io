@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Day 67 – Printing the Session Response Success and Error"
+date: 2014-09-05 23:59:59
+categories: blog
+---
+
+### Define the code
+With this code we can print errors. As we know whenever we write ruby in HTML with mote you
+must place a sign `%` before writing the code:  
+
+<script src="https://gist.github.com/rociopaez/ad8383d8cc3c8f793246.js"></script>
+
+**Line 1**  
+First we are defined the `session` with a hash `params` and this params with a hash `session`.  
+
+**Line 3 to 7:**  
+If session has a hash with the key: `success` it will print the value.
+To print in mote you need to use double `{}` `session.delete(:success)`  
+Do the same for the session error (Line 9 to 13)
+
+### Define my layout
+
+<script src="https://gist.github.com/rociopaez/c26308e4efb27cc3da7a.js"></script>
+
+### Write the message
+Now to work, we need to write the message that you want to print.  
+We are execute the code on `line 13` and `line 29`.
+
+<script src="https://gist.github.com/rociopaez/dea06fc5d84418a75bed.js"></script>
+
+Here we are execute the code in the line 14
+
+<script src="https://gist.github.com/rociopaez/572ce8353479819a9ea2.js"></script>
+
+![update_password_1](/images/update_password_1.jpg)
+
+![update_password_2](/images/update_password_2.jpg)
+
+![update_password_3](/images/update_password_3.jpg)
