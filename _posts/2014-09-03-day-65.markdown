@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Day 65 – Update my Password"
+date: 2014-09-03 23:59:59
+categories: blog
+---
+
+We'll have to do the same like in the update profile.
+
+I create a file with the name: `update_password.rb`
+
+Here we are validate 2 attributes:  
+- password  
+- password_confirmation
+
+<script src="https://gist.github.com/rociopaez/8e4bc887103629db567c.js"></script>
+
+##### Then I go to the route: profile:
+
+<script src="https://gist.github.com/rociopaez/4f95dca675b4c3241a6b.js"></script>
+
+Then I write the mistakes that I need to print:
+We put the same parameters errors that we use in the `Sign Up`. I'm just adding the `password confirmation`.  
+(Line 4 to 22).
+
+<script src="https://gist.github.com/rociopaez/89391db8d1bd1f3d2322.js"></script>
