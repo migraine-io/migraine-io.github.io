@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Day 71 – The progress of my App and my Experience"
+date: 2014-09-09 23:55:59
+categories: blog
+---
+
+Now I have spent two months in the summer of code, and the experience is amazing.  
+I remember the first month, when started my application, the changes I was doing, now we only have one month more of summer of code. Happy to continue learning and coding.
+
+- [I understood more how to distinguish an object from a class.][1]
+- [What is an Array?][1]  
+- [How can I create a Hash?][2]  
+-  Instance methods: It is a method of a concrete object of a class.
+-  Class methods: It is a method for a class of object, for example when you go to create a new one.
+
+I am taking great steps forward in my App.
+
+#### The application looks this way:
+
+When you go to [www.migraine.io/app][3]
+
+Have a bar at the top and the following links:
+
+- Sign In
+- Sign Up  
+
+Now you can Sign In and Sign Up and save the new user and verify that you do not have duplicate users.
+
+After the user is registered, you have access to another menu:
+
+- Dashboard
+- Input
+- Outputs
+- Types
+- Profile
+- Sign Out
+
+In this part, as well as all the templates work. I can register a new input, edit my profile, close session, I have printed the types by default brings the app.
+
+### Pending Items:
+**Forgot your password**  
+When you register, you receive an email with the welcome message. The answer is already running, I only need to activate the config for outgoing mail: mail account is already active: info@migraine.io.  
+
+**Edit or Delete Types**  
+To add an input and this then appears on the user, the same for the outputs.  
+
+**Generate my dashboard**  
+Dasboard is practically statistics according the filter that you need.
+
+Tomorrow I have my meeting with my 2 coaches: [Gustavo Beathyate][4] and [Francesco Rodríguez][5].  
+I'm learning a lot with them. Thanks guys!
+
+So, the day is finished, I go to relax:
+
+![Relax](/images/cat_relax.gif)
+
+[1]: http://www.migraine.io/blog/2014/day-2.html
+[2]: http://www.migraine.io/blog/2014/day-32.html
+[3]: https://github.com/migraine-io/migraine-app
+[4]: https://github.com/goddamnhippie
+[5]: https://github.com/frodsan
