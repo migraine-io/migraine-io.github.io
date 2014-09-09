@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Day 71 – The progress of my App and my Experience"
-date: 2014-09-09 23:55:59
+date: 2014-09-09 18:45:59
 categories: blog
 ---
 
