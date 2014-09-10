@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Day 72 – My Landing Page"
+date: 2014-09-10 16:00:00
+categories: blog
+---
+
+Less than a month to finish my app :)
+
+![Landing Page](/images/landing_page.jpg)
