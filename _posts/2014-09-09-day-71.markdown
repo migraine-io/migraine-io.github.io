@@ -40,10 +40,12 @@ In this part, as well as all the templates work. I can register a new input, edi
 
 ### Pending Items:
 **Forgot your password**  
-When you register, you receive an email with the welcome message. The answer is already running, I only need to activate the config for outgoing mail: mail account is already active: info@migraine.io.  
+When you register, you receive an email with the welcome message. The local setup is already running, I only need to activate the config for outgoing mail: mail account is already active: info@migraine.io.  
 
 **Edit or Delete Types**  
 To add an input and this then appears on the user, the same for the outputs.  
+
+**Saving New Inputs and Outputs by User**
 
 **Generate my dashboard**  
 Dasboard is practically statistics according the filter that you need.
