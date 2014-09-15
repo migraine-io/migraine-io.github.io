@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Day 73 – Define the date with ohm-contrib"
+date: 2014-09-11 23:59:59
+categories: blog
+---
+
+I made a selector for the date one month ago (because the new calendar widget doesn't work with Safari and other browsers).
+You can check [the Day 43][1] there I use a select for a month, day and year.
+
+So, to register the date of my `Inputs` and `Outputs`, I need a gem to cast the value to a date.
+In this case I use [`ohm-contrib`][2]
+
+[1]: http://www.migraine.io/blog/2014/day-43.html
+[2]: https://github.com/cyx/ohm-contrib
+
+This gem works like this:
+
+#### You need to install the gem in your terminal.
+
+{% highlight bash %}
+$ dep add ohm-contrib
+$ dep install ohm-contrib
+{% endhighlight bash %}
+
+#### Then you requiere it in your app:
+{% highlight ruby %}
+require 'ohm'
+require 'ohm/contrib'
+{% endhighlight ruby %}
+
+#### Go to your model and include `Ohm::DataTypes`
+
+{% highlight ruby %}
+class Input < Ohm::Model
+  include Ohm::DataTypes
+
+  attribute :date, Type::Date
+
+  reference :user, :User
+  reference :type, "::Type"
+end
+{% endhighlight ruby %}
+
+{% highlight ruby %}
+class Output < Ohm::Model
+  include Ohm::DataTypes
+  reference :user, :User
+
+  attribute :date, Type::Date
+  attribute :duration, Type::Integer
+  attribute :scale, Type::Integer
+end
+{% endhighlight ruby %}
