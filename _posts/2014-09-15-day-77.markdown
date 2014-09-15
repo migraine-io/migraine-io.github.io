@@ -16,7 +16,7 @@ You can see the changes of my repository in: <https://github.com/migraine-io/mig
 
 [Edit Types.][4]
 
-[1]: http://www.migraine.io/blog/2014/day-75.html
+[1]: http://www.migraine.io/blog/2014/day-74.html
 [2]: https://github.com/migraine-io/migraine-app/commit/0cfacd56d5fcee822effb4f305dafeeec2512a95
 [3]: https://github.com/migraine-io/migraine-app/commit/0fe006340f38f8aa1b5cc78f27955ac3a6fc2fc5
 [4]: https://github.com/migraine-io/migraine-app/commit/67a1d76e93efb7e6259ea62e5d43411fbd8c491b
