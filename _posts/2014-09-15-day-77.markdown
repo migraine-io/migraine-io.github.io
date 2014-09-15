@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Day 77 – My Check List"
+date: 2014-09-15 17:59:59
+categories: blog
+---
+
+You can see the changes of my repository in: <https://github.com/migraine-io/migraine-app>
+
+
+### Items Finished:
+
+[Saving new Inputs by User.][1] ([Migraine.App][2])
+
+[Saving new Outputs by User.][3]  
+
+[Edit Types.][4]
+
+[1]: http://www.migraine.io/blog/2014/day-75.html
+[2]: https://github.com/migraine-io/migraine-app/commit/0cfacd56d5fcee822effb4f305dafeeec2512a95
+[3]: https://github.com/migraine-io/migraine-app/commit/0fe006340f38f8aa1b5cc78f27955ac3a6fc2fc5
+[4]: https://github.com/migraine-io/migraine-app/commit/67a1d76e93efb7e6259ea62e5d43411fbd8c491b
+
+
+### Pending Items:
+**Forgot your password**  
+When you register, you receive an email with a welcome message. The local setup is already running, I only need to activate the config for outgoing mail, mail account is already active: info@migraine.io.  
+
+**Delete Types**  
+To add an input and this then appears on the user, the same for the outputs.
+
+**Edit Inputs and Outputs**
+
+**Generate my dashboard**  
+Dashboard is practical statistics according the date range that you need.
