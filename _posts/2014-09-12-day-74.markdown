@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Day 74 – Saving New Inputs by User"
+date: 2014-09-12 23:59:59
+categories: blog
+---
+
+I'm happy because today I created a way to save Inputs by user.
+I understand more how it all works!!
+
+Check it out:
+
+#### Define the model:
+Line 2: works with the `gem ohm-contrib`
+<script src="https://gist.github.com/rociopaez/5dbcacff58d5cbedb525.js"></script>
+
+#### Define the name of the select:
+Line: 6, 11, 16 and 24.
+<script src="https://gist.github.com/rociopaez/062f3aeb6a89f3d78bf8.js"></script>
+
+#### Define my index
+<script src="https://gist.github.com/rociopaez/26725f06fb9ed0b93c21.js"></script>
+
+#### Define the route:
+<script src="https://gist.github.com/rociopaez/bf92e08bdda4343aaa13.js"></script>
+
+#### Define the route on user
+{% highlight ruby %}
+on("inputs") do
+  run(Inputs)
+end
+{% endhighlight ruby %}
+
+
+Now I can do the same for the Output.
+
+`/play tada`
