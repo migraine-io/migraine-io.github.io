@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Day 86 – Edit and Create Types"
+date: 2014-09-24 23:39:59
+categories: blog
+---
+
+Now the app is working better.
+I can create and edit types saving by user.
+Before no changes were seen were you doing.
+
+[See the commit][1]
+
+[1]: https://github.com/migraine-io/migraine-app/commit/ed6a498308a559ce62794da8aeb56a13b1774164
+
+Line 7 to 8:  
+When in the route appears the id, must run the id parameter (we are defining which type is equal to the Type class with the parameter id.)  
+
+Line 10:  
+When you do post to the param `type` you do the following:
+update your type with the atributtes category and name (this attributes are define in the model type)
+Then redirect to the principal page: types.
+If you don't press send, you stay in the page: types/edit.  
+
+Line 20:  
+On post param type do the following params:
+Create a type with the attributes category and name and the user id is always present.
+Then redirect to the principal pages but if you dont send the value you stay in the same page.
+
+![create_edit_types1](/images/create_edit_types1.jpg)
+
+<br>  
+
+Here I define the form action, I'm writing on the path the user id.
+
+![create_edit_types2](/images/create_edit_types2.jpg)
+
+![create_edit_types3](/images/create_edit_types3.jpg)
+
+Now my Types already can edit and create
