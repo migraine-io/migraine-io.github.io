@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Day 89 - Generate my Dashboard Statistics"
+date:   2014-09-27 17:50:36
+categories: blog
+---
+
+Finally my Dashboard is working!!
+
+
+[Dashboard Report Statistics](https://github.com/migraine-io/migraine-app/commit/e3691dde9285e81a0339fccbd4277143ee55513a)
+
+
+![dashboard_model](/images/dashboard_model.jpg)
+
+![dashboard_template](/images/dashboard_template.jpg)
+
+![dashboard_route](/images/dashboard_route.jpg)
