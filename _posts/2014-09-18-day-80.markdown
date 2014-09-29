@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Day 80 – Edit my Outputs and Inputs"
+date: 2014-09-18 15:39:59
+categories: blog
+---
+
+Today I learn how I can edit my outputs.
+
+I create the template: `outputs/edit`
+
+For this to work is important to locate the select and change the `selected`  
+- Month: line 8  
+- Day: line 13  
+- Year: line 20  
+- Scale: line 27  
+- Duration: line 32 to 37
+
+For example if you see the template `outputs/new` I replace:  
+`Time.now.month => output.date.month`  
+You're saying that instead of putting the current date you must put the date that select the user that you want to edit.
+
+![edit_output](/images/edit_output.jpg)  
+
+<br>
+Here I define in my index the link of edit output: is important that in the route is present the user id.
+
+![edit_output2](/images/edit_output2.jpg)
+
+<br>
+Now to work I go to the route: output.rb
+
+Line 7:  
+When in the route appears the id, must run the id parameter (we are defining which output is equal to the Output class with the parameter id.)
+
+on post param output ejecute params:
+Date =  am creating a date using the parameters: date_month, date_year and date_day  
+output = then update the attributes: date, scale and duration.  
+
+Once you update your outputs will redirect you to the initial page of outputs, if you do not send you stay on the page `edit/outputs`.
+
+![edit_output3](/images/edit_output3.jpg)
+
+You do the same with the inputs.
+
+See the repository:
+
+[Inputs](https://github.com/migraine-io/migraine-app/commit/5dcf6e7f49e55266321d323ba6229fe0b6c4794a)  
+[Outputs](https://github.com/migraine-io/migraine-app/commit/5b5ad1a1bfbf584cbf129ec6c653ebd49ba36011)  
