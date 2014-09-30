@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Rocio Paez, I'm 32 and I've been working on technology related logistics for my entire professional life.
+My name is [Rocio Paez](http://www.rociopaez.com), I'm 32 and I've been working on technology related logistics for my entire professional life.
 
 I always loved working with computers. Last November I took a 3-month course on <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="Dynamic computer programming language.">JavaScript</abbr> and I loved it. I discovered how a website is built, and the proper way to give styles to a page.
 
