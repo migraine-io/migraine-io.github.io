@@ -5,39 +5,45 @@ date: 2014-09-18 15:39:59
 categories: blog
 ---
 
-Today I learn how I can edit my outputs.
+Today I learned to edit my outputs.
 
-I create the template: `outputs/edit`
+I create the template: `outputs/edit.mote`
 
-For this to work is important to locate the select and change the `selected`  
+It is important to locate the select and change the `selected`  
+
 - Month: line 8  
 - Day: line 13  
 - Year: line 20  
 - Scale: line 27  
 - Duration: line 32 to 37
 
-For example if you see the template `outputs/new` I replace:  
+For example as you can see in the template `outputs/new.mote` I replace:  
+
 `Time.now.month => output.date.month`  
-You're saying that instead of putting the current date you must put the date that select the user that you want to edit.
+
+What you're saying is that instead of putting the current date you must put the date that the user selected.
 
 ![edit_output](/images/edit_output.jpg)  
 
 <br>
-Here I define in my index the link of edit output: is important that in the route is present the user id.
+
+Here I define in my index the link of edit output: is important that in the route the user id is present.
 
 ![edit_output2](/images/edit_output2.jpg)
 
 <br>
-Now to work I go to the route: output.rb
+
+Now we have to go to the route: output.rb
 
 Line 7:  
-When in the route appears the id, must run the id parameter (we are defining which output is equal to the Output class with the parameter id.)
+When the route has an id parameter, it matches that block and is passed to it.
 
-on post param output ejecute params:
-Date =  am creating a date using the parameters: date_month, date_year and date_day  
+On the next line we find the output with that id and assign the output variable.
+
+Date = I am creating a date using the parameters: date_month, date_year and date_day  
 output = then update the attributes: date, scale and duration.  
 
-Once you update your outputs will redirect you to the initial page of outputs, if you do not send you stay on the page `edit/outputs`.
+Once you update your outputs it will redirect you to the initial list of outputs.
 
 ![edit_output3](/images/edit_output3.jpg)
 

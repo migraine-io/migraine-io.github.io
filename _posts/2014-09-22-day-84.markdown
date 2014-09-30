@@ -5,23 +5,20 @@ date: 2014-09-22 23:39:59
 categories: blog
 ---
 
-The code in my select duration is very large, now I learn a form to simplyficate the code:
+The code in my select duration is very large, now I learned a way to simplify the code:
 
-Para poder simplificar mi selector de duracion y no tener que escribirlo todo el tiempo que lo necesite, he definido una variable DURATION y con el siguiente arreglo de hashes.
-Esto lo estoy definiendo en mi modelo Output.
+To simplify my selector of `duration` and then to not have to write all that I have defined a constant `DURATION` as a hash.
 
-To simplify my selector of `duration` and then not have to write all the large code, I have defined a variable `DURATION`  with the following hashes.
-This I am defining in my model `Output`.
+This I am defining it in my model `Output`.
 
 For this to work I delete all my options selector and replace it with the following code:
 
 ![duration_output](/images/duration_output.jpg)
 
-Here I am saying is that to edit my outputs (line 32 to 38)  
-I'm calling to the variable `DURATION` and will run each method (that I need to pass through the entire array).
-If the duration of my output is the same as the duration that mark, you should stay at the same length, otherwise it must put the new duration that user dialed.  
+What I am saying here is that to edit my outputs (line 32 to 38)  
+I'm calling to the constant `DURATION` and will run each method (that I need to pass through the entire array).
+If the duration of my output is the same as the duration that of that option, it is shown as selected.  
 
-
-To create a new Output use the same code, except that we will remove the condition, since for this case we do not need.  
+To create a new Output, we use the same code, except that we will remove the condition, since for this case we do not need it.  
 
 ![duration_output1](/images/duration_output1.jpg)

@@ -5,7 +5,7 @@ date:   2014-09-29 18:50:36
 categories: blog
 ---
 
-Today I post in the blog oficial of Rails Girls.
+Today I posted in the blog oficial of Rails Girls.
 
 [Introducing Team Migraine](http://railsgirlssummerofcode.org/blog/introducing-team-migraine/)
 

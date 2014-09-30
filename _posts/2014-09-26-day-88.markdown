@@ -5,14 +5,9 @@ date:   2014-09-26 17:50:36
 categories: blog
 ---
 
-My application is almost ready, now what we do is to erase any record.
+My application is almost ready, now what we do is erase any record.
 
-For example in my `types` I do:
-
-I define the route:  
-I'm saying when in the route appears `delete` do: input.delete, then redirect to the principal page.
-
-To delete is important to use `POST` instead of `GET`.  
+For example in my `types` I do (To delete is important to use `POST` instead of `GET`):  
 
 {% highlight ruby %}
 on "delete", post do
@@ -22,7 +17,8 @@ on "delete", post do
 end
 {% endhighlight ruby %}
 
-In my index page:  
+In my index page:
+
 On the route the id must be present.
 
 <script src="https://gist.github.com/rociopaez/3416a0ca42af3de1717e.js"></script>.
